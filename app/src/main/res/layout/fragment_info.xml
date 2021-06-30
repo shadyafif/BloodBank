@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/txt_Info_UpdateAccount"
+        style="@style/InfoTextStyle"
+        android:text="@string/account"
+        app:drawableStartCompat="@drawable/ic_contact"
+        app:layout_constraintBottom_toTopOf="@+id/View_Account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/View_Account"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/ViewColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Info_UpdateAccount" />
+
+    <TextView
+        android:id="@+id/txt_Info_Favorite"
+        style="@style/InfoTextStyle"
+        android:text="@string/favorite"
+        app:drawableStartCompat="@drawable/ic_favorite"
+        app:layout_constraintBottom_toTopOf="@+id/View_Favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Account" />
+
+    <View
+        android:id="@+id/View_Favorite"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/ViewColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Info_Favorite" />
+
+    <TextView
+        android:id="@+id/txt_Info_Report"
+        style="@style/InfoTextStyle"
+        android:text="@string/report"
+        app:drawableStartCompat="@drawable/ic_report"
+        app:layout_constraintBottom_toTopOf="@+id/View_Report"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Favorite" />
+
+    <View
+        android:id="@+id/View_Report"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/ViewColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Info_Report" />
+
+    <TextView
+        android:id="@+id/txt_Info_ContactUs"
+        style="@style/InfoTextStyle"
+        android:text="@string/contact_us"
+        app:drawableStartCompat="@drawable/ic_contact_us"
+        app:layout_constraintBottom_toTopOf="@+id/View_ContactUs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Report" />
+
+    <View
+        android:id="@+id/View_ContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/ViewColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Info_ContactUs" />
+
+    <TextView
+        android:id="@+id/txt_Info_AboutUs"
+        style="@style/InfoTextStyle"
+        android:text="@string/about_us"
+        app:drawableStartCompat="@drawable/ic_about_us"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_ContactUs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
